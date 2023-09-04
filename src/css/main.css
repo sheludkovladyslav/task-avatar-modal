@@ -43,41 +43,66 @@
 .trailer .button {
   padding: 25px 20px;
 }
+
 .backdrop {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #000000a1;
+  background-color: #00000054;
   opacity: 1;
 }
+
 .backdrop.is-hidden {
   opacity: 0;
   pointer-events: none;
 }
+
 .no-scroll {
   overflow: hidden;
 }
+
 .modal {
+  background-color: #fff;
   position: absolute;
-  left: 50%;
   top: 50%;
+  left: 50%;
   transform: translate(-50%, -50%);
-  background-color: #acacac;
+  min-width: 800px;
+  min-height: 500px;
   padding: 20px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   gap: 20px;
-  min-width: 400px;
-  min-height: 300px;
+  border-radius: 20px;
+  box-shadow: 11px 11px 18px 1px rgba(0, 0, 0, 0.74);
 }
-.button-close {
+
+.modal-close {
   align-self: flex-end;
-  background-color: #0a3853;
+  border: none;
   color: #fff;
-  width: 30px;
   height: 30px;
+  width: 30px;
+  background-color: rgb(216, 171, 6);
   border-radius: 50%;
+}
+
+.trailer-title {
+  color: #101010;
+  font-size: 36px;
+  text-shadow: #fc0 1px 0 10px;
+  margin-bottom: 5px;
+}
+
+iframe {
+  border-radius: 5px;
+}
+
+.modal-close:hover {
+  width: 35px;
+  height: 35px;
 }
